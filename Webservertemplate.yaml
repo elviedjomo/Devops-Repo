@@ -61,12 +61,12 @@ Resources:
           FromPort: '22'
           IpProtocol: tcp
           ToPort: '22'
-Mappings:
-  EnvironmentToRegion: # Map Name
-    us-east-1:
-      Env: Test
-    us-west-1:   # Second level key  
-      Env: Prod
+# Mappings:
+#   EnvironmentToRegion: # Map Name
+#     us-east-1:
+#       Env: Test
+#     us-west-1:   # Second level key  
+#       Env: Prod
 # Outputs:
 #   InstanceId:
 #     Description: InstanceId of the newly created EC2 instance
