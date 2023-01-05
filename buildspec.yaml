@@ -16,7 +16,7 @@ phases:
         - echo testing our template
         - cfn-lint Webservertemplate.yaml
         - echo Build started on `date`
-        - aws cloudformation package --template-file Webservertemplate.yaml --s3-bucket aws-deploy-artifact-bucket --output-template-file outputTemplate.yaml
+        - aws cloudformation package --template-file Webservertemplate.yaml --s3-bucket deploy-artifact-bucket --output-template-file outputTemplate.yaml
 
     post_build:
       commands:
